@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>American Easy Buy - Shop with Confidence</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* All existing styles remain the same */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            padding: 1rem 2rem;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .nav-links {
+            display: none;
+        }
+
+        .nav-icons i {
+            margin-left: 1rem;
+            color: #666;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            background: #2563eb;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        /* Products Section */
+        .products {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .products-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: scale(1.02);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 1rem;
+        }
+
+        .product-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .product-description {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .product-price {
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 4rem 2rem 2rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section a {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+
+        .footer-section a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #374151;
+            color: #9ca3af;
+        }
+
+        /* Media Queries */
+        @media (min-width: 768px) {
+            .nav-links {
+                display: flex;
+                gap: 2rem;
+            }
+
+            .nav-links a {
+                color: #666;
+                text-decoration: none;
+            }
+
+            .nav-links a:hover {
+                color: #333;
+            }
+
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .products-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">American Easy Buy</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="https://www.pfaify.com/productHome/#/">Shop</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <i class="fas fa-search"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Discover Quality Products</h1>
+        <p>Shop the latest trends with confidence and ease</p>
+        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">Shop Now</a>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products">
+        <div class="products-header">
+            <h2>Featured Products</h2>
+            <a href="https://daapfa.com" style="color: #2563eb; text-decoration: none;" target="_blank">View More →</a>
+        </div>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="/api/1.jpg" alt="Headphones" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Eye Color Quad</h3>
+                    <p class="product-description">Discover the alluring shades of the TOM FORD Runway Look.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="product-price">$5.99</span>
+                        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/01.jpg" alt="Smart Watch" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">9 Color Eye Color Quad</h3>
+                    <p class="product-description">9 Creamy & Dazzling Shades</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="product-price">$9.99</span>
+                        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/02.jpg" alt="Camera" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">SELF-REFRESHING Custom Finish Powder Foundation</h3>
+                    <p class="product-description">Natural Finish Powder Foundation with 8H Shine Control</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="product-price">$5.99</span>
+                        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/z1.jpg" alt="Headphones" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">The Precious Lipstick</h3>
+                    <p class="product-description">Diamond-Class Lipstick Luxury</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="product-price">$24</span>
+                        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/z1%202.jpg" alt="Headphones" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Sunscreen</h3>
+                    <p class="product-description">Help you avoid from sun burn</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="product-price">$3</span>
+                        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/4.jpg" alt="Headphones" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Lipstick</h3>
+                    <p class="product-description">A radiant satin lipstick with a lustrous finish.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="product-price">$19</span>
+                        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/4%202.jpg" alt="Headphones" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Brow Perfector</h3>
+                    <p class="product-description">Essential tool for filling, shaping, and defining eyebrows</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="product-price">$1.99</span>
+                        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/8301-002S01.jpg" alt="Headphones" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">CoCo</h3>
+                    <p class="product-description">Ultra Hydrating Lip Colour</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="product-price">$3</span>
+                        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">view more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="/api/1%202.jpg" alt="Headphones" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Rouge</h3>
+                    <p class="product-description">Couture Color - Hydrating & Long-lasting lipstick - Velvet, Satin & New Veil Finishes</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <span class="product-price">$19.99</span>
+                        <a href="https://www.pfaify.com/productHome/#/" class="btn" target="_blank">view more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>American Easy Buy is your trusted destination for quality products and exceptional shopping experience.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="contact.html"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="contact.html"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="contact.html"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 American Easy Buy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
